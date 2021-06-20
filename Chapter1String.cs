@@ -7,19 +7,35 @@ namespace ConsoleApp1
     public class Chapter1String
     {
 
-
-
-
-
-
-        public String checkDeplicatedCharactor(String s)
+        static public bool hasOnlyUniqueChars(String s)
         {
 
+            char[] stringChars = s.ToCharArray();
+
+            
+            for(int i = 0; i <stringChars.Length; i++)
+            {
+                for(int j = i+1; j < stringChars.Length; j++)
+                {
+
+                    if(stringChars[i] == stringChars[j])
+                    {
+                        return false;
+
+                    }
 
 
+                }
+            }
+
+            
+
+            // 
+            // new data structure is not avaiable 
+            // 
 
 
-            return s;
+            return true;
 
         }
 
