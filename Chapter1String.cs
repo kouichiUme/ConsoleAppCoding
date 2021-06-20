@@ -7,19 +7,35 @@ namespace ConsoleApp1
     public class Chapter1String
     {
 
-
-
-
-
-
-        public String checkDeplicatedCharactor(String s)
+        static public bool hasOnlyUniqueChars(String s)
         {
 
+            char[] stringChars = s.ToCharArray(); // this character code is ASCII included in UTF8
+            // i think so ascii utf-16
+            
+            for(int i = 0; i <stringChars.Length; i++)
+            {
+                for(int j = i+1; j < stringChars.Length; j++)
+                {
+
+                    if(stringChars[i] == stringChars[j])
+                    {
+                        return false;
+
+                    }
 
 
+                }
+            }
+
+            
+
+            // 
+            // new data structure is not avaiable 
+            // 
 
 
-            return s;
+            return true;
 
         }
 
@@ -50,23 +66,32 @@ namespace ConsoleApp1
             {
                 results[i] = false;
             }
+
+            bool resultFlag = false;
             for(int i=0;i<s1c.Length; i++)
             {
                 if(s1c[i] != s2c[i])
                 {
                     results[i] = false;
+                    resultFlag  = true;
                 }
                 else
                 {
                     results[i] = true;
                 }
             }
+
+
             bool tempResult = results[0];
             for(int i = 0; i < results.Length; i++)
             {
                 tempResult = tempResult && results[i]; 
             }
 
+            if(tempResult != resultFlag)
+            {
+                System.Diagnostics.Debug.Assert(tempResult != resultFlag ,"なにかへんだ");
+            }
             result = tempResult;
 
 
