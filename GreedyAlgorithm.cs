@@ -7,6 +7,8 @@ namespace ConsoleApp1
     class GreedyAlgorithm
     {
 
+        Stack<int> stack;
+
 
 
         public void huffman(int c)
@@ -15,6 +17,20 @@ namespace ConsoleApp1
 
 
 
+        }
+
+
+
+        public int[] multiPop(int k)
+        {
+            Stack<int> res = new Stack<int>();
+
+            while (k > 0 || this.stack.Count >= 0)
+            {
+                res.Push(this.stack.Pop());
+                k--;
+            }
+            return res.ToArray();
         }
     }
 }
