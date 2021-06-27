@@ -19,7 +19,7 @@ namespace ConsoleApp1
         public long size =0;
 
         public Chapter2Link(){
-            node = new Node<T>();
+            node = null;
         }
 
 
@@ -29,15 +29,24 @@ namespace ConsoleApp1
         {
             Node<T> node = new Node<T>();
             node.t = a;
+            node.next = null;
 
             Node<T> end;
-            for (end = this.node;end.next !=null;end = end.next)
+            if(this.node == null)
             {
-                // なにもしない
+                this.node = node;
             }
-            
-            end.next = node;
-            this.size++;
+            else
+            {
+                for (end = this.node; end.next != null; end = end.next)
+                {
+                    // なにもしない
+                }
+
+                end.next = node;
+
+            }
+
         }
 
         public T find3rdNode(int k)
@@ -46,41 +55,22 @@ namespace ConsoleApp1
             Node<T> second = new Node<T>();
             Node<T> end;
 
-            if(k > this.size)
-            {
-                // throw new ArguementErrorException();
-                return default(T);
-                
-            }
+
             LinkedList<Node<T>> l = new LinkedList<Node<T>>();
             int count = 0;
-            for(end = node; end.next != null; end = end.next)
+            for (end = this.node; count < k-1;   count++)
             {
-
-                Node<T> kBanme = new Node<T>();
-                for(int i =0; i < l.Count; i++)
-                {
-
-                }
-                if (count > 2)
-                {
-                    d = second ;
-
-                }
-
-
-                if (count > 1)
-                {
-                    
-                    second = end;
-                    
-                }
-                count++;
-
+                end = end.next;
             }
 
-            
-            
+            // 
+            for (d= this.node; end.next != null; )
+            {
+                end = end.next;
+                d = d.next;
+            }
+
+
             return d.t;
 
 
