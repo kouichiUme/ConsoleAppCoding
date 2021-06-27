@@ -4,8 +4,7 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    public class Chapter2Link<T> where T : new()
-
+    public class Chapter2Link<T> where T :  new()
 
 
     {
@@ -17,6 +16,7 @@ namespace ConsoleApp1
         }
 
         private Node<T> node;
+        public long size =0;
 
         public Chapter2Link(){
             node = new Node<T>();
@@ -37,16 +37,31 @@ namespace ConsoleApp1
             }
             
             end.next = node;
+            this.size++;
         }
 
-        public T find3rdNode()
+        public T find3rdNode(int k)
         {
             Node<T> d = new Node<T>();
             Node<T> second = new Node<T>();
             Node<T> end;
+
+            if(k > this.size)
+            {
+                // throw new ArguementErrorException();
+                return default(T);
+                
+            }
+            LinkedList<Node<T>> l = new LinkedList<Node<T>>();
             int count = 0;
             for(end = node; end.next != null; end = end.next)
             {
+
+                Node<T> kBanme = new Node<T>();
+                for(int i =0; i < l.Count; i++)
+                {
+
+                }
                 if (count > 2)
                 {
                     d = second ;
@@ -64,6 +79,8 @@ namespace ConsoleApp1
 
             }
 
+            
+            
             return d.t;
 
 
