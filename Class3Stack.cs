@@ -14,7 +14,18 @@ namespace ConsoleApp1
 
 
 
+
+
         }
 
+        public void vebTreeMember()
+        {
+
+        }
+
+        public void vebTreeSuccessor()
+        {
+
+        }
     }
 }
