@@ -12,5 +12,14 @@ namespace ConsoleApp1
         {
 
         }
+
+
+        /// <summary>
+        /// 深さ優先検索
+        /// </summary>
+        public void breadthFirstSearch()
+        {
+
+        }
     }
 }
