@@ -6,7 +6,10 @@ namespace ConsoleApp1
 {
     class Class4Graph
     {
+        public void findNodeToNode()
+        {
 
+        }
 
 
 
