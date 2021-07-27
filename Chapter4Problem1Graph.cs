@@ -27,7 +27,7 @@ namespace ConsoleApp1
                 this.t = t;
                 this.s = state.Unvisited;
 
-                adjacents = new LinkedList<ExtendedT<Class4Graph<T>.GraphNode>();
+                adjacents = new LinkedList<ExtendedT<Class4Graph<T>.GraphNode>>();
 
 
                 foreach (Class4Graph<T>.GraphNode g in t.getAdjacent())
@@ -74,19 +74,19 @@ namespace ConsoleApp1
             // 状態を追加して再設定
             foreach (T t in g.getNodes())
             {
-                ExtendedT<Class4Graph<T>.GraphNode> et = new ExtendedT<Class4Graph<T>.GraphNode>(t);
+                ExtendedT<Class4Graph<T>.GraphNode> et = new ExtendedT<Class4Graph<T>.GraphNode>(new Class4Graph<T>.GraphNode(t));
                 et.s = state.Unvisited;
                 tmpGraph.AddLast(et);
             }
 
-            ExtendedT<Class4Graph<T>.GraphNode> startNode = new ExtendedT<Class4Graph<T>.GraphNode>(start);
+            ExtendedT<Class4Graph<T>.GraphNode> startNode = new ExtendedT<Class4Graph<T>.GraphNode>(new Class4Graph<T>.GraphNode(start));
 
             q.AddLast(startNode);
 
 
             ExtendedT<Class4Graph<T>.GraphNode> u;
-
-            while (q.Count != 0)
+            bool finined = false;
+            while (q.Count != 0 || finined)
             {
                 u = q.First.Value;
                 q.RemoveFirst();
@@ -108,7 +108,12 @@ namespace ConsoleApp1
                                 // ここでリターンしないとどうなるか？
                                 // break ? goto　などループから抜ける？
                                 // 
-                                return true;
+                                v.s = state.Visited;
+                                // break whileBreak;
+                                // goto whileBreak;
+                                finined = true;
+                                break;
+                                // return true;
                             }
                             else
                             {
@@ -119,14 +124,21 @@ namespace ConsoleApp1
                         }
 
                     }
-                    u.s = state.Unvisited;
+                    
+                    u.s = state.Visited;
                 }
 
             }
- 
+        // whileBreak:
+
+            ExtendedT<Class4Graph<T>.GraphNode > endNode = new ExtendedT<Class4Graph<T>.GraphNode>(new Class4Graph<T>.GraphNode(end));
             // result を返すのではなくて
             // falseでいいかも
             // c/c++だったとしたらメモリ管理上どうなるか？
+            // if(end.s == state.Visisted){
+            // result = true;
+            // }
+            //
             return result;
         }
 

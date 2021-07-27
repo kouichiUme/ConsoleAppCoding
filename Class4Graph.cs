@@ -31,6 +31,13 @@ namespace ConsoleApp1
 
         internal class GraphNode
         {
+            T t;
+            public GraphNode(T t)
+            {
+                this.t = t;
+            }
+
+
             public IEnumerable<GraphNode> getAdjacent()
             {
 
