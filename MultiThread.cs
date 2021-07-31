@@ -6,5 +6,9 @@ namespace ConsoleApp1
 {
     class MultiThread
     {
+        public void transPose()
+        {
+
+        }
     }
 }
