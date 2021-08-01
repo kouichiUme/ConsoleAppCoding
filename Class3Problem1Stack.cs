@@ -21,7 +21,7 @@ namespace ConsoleApp1
     //
     class Class3Problem1Stack
     {
-        private LinkedList<NodeOfThree<int>> node = new LinkedList<NodeOfThree<int>>(2000);
+        private LinkedList<NodeOfThree<int>> node = new LinkedList<NodeOfThree<int>>();
 
         public void initThreeStacksInARow()
         {
