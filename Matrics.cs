@@ -7,7 +7,10 @@ namespace ConsoleApp1
     public class Matrics
     {
 
+        public void lpuSolve()
+        {
 
+        }
 
     }
 }
