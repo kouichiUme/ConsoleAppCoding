@@ -9,6 +9,15 @@ namespace ConsoleApp1
 
         ///線形計画法
         ///
+        pivot()
+        {
+
+        }
+
+        simplex()
+        {
+
+        }
 
     }
 }
