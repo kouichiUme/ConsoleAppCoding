@@ -9,12 +9,17 @@ namespace ConsoleApp1
 
         ///線形計画法
         ///
-        pivot()
+
+        public void convertGraphToMatrix()
+        {
+
+        }
+        public void pivot()
         {
 
         }
 
-        simplex()
+        public void simplex()
         {
 
         }
