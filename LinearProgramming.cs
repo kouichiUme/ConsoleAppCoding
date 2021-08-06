@@ -14,6 +14,10 @@ namespace ConsoleApp1
         {
 
         }
+        public void initializeSimplex()
+        {
+
+        }
         public void pivot()
         {
 
