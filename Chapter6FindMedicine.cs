@@ -29,7 +29,7 @@ namespace ConsoleApp1
                 
 
                 // 本来の重さの数だけ合計する
-                expectedSummary = expectedMedicine * index;
+                expectedSummary += expectedMedicine * index;
 
                 index++;
 
