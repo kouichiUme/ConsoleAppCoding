@@ -31,5 +31,10 @@ namespace ConsoleApp1
         {
 
         }
+
+        public void pollardRho()
+        {
+
+        }
     }
 }
