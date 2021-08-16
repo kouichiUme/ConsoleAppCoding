@@ -4,7 +4,20 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class ComputationalGeometery
+    public class ComputationalGeometery
     {
+
+
+        public void onSegment()
+        {
+
+
+
+
+
+            return;
+        }
+
+
     }
 }
