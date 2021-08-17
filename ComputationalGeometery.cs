@@ -18,6 +18,20 @@ namespace ConsoleApp1
             return;
         }
 
+        public void convexHill()
+        {
+
+        }
+
+        public void findInterSection()
+        {
+
+        }
+
+        public void presorting()
+        {
+
+        }
 
     }
 }
