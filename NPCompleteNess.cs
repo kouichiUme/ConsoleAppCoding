@@ -4,7 +4,15 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class NPCompleteNess
+    public class NPCompleteNess
     {
+
+        public void findCircuit()
+        {
+
+        }
     }
+
+
+
 }
