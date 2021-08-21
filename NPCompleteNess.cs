@@ -11,6 +11,10 @@ namespace ConsoleApp1
         {
 
         }
+
+        public static string clique = "clique";
+
+
     }
 
 
