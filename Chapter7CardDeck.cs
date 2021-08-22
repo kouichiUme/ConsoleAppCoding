@@ -167,7 +167,7 @@ namespace ConsoleApp1
             for (int i = 0; i < players.Count; i++){
                 Cards c = d.draw();
 
-                players[i].addCard(c);
+               // players[i].addCard(c);
             }
         }
 
