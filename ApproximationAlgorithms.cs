@@ -4,7 +4,13 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class ApproximationAlgorithms
+    public class ApproximationAlgorithms
     {
+
+
+        public static void approxVertexCover()
+        {
+
+        }
     }
 }
