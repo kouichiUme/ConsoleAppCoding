@@ -13,7 +13,7 @@ namespace ConsoleApp1
 
         }
 
-        public void selfConveringProblem()
+        public void setConveringProblem()
         {
 
         }
