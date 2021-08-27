@@ -22,5 +22,18 @@ namespace ConsoleApp1
         {
 
         }
+
+        //刈り込む
+
+        public void trim()
+        {
+
+        }
+
+        // 
+        public void approxSubsetSum()
+        {
+
+        }
     }
 }
