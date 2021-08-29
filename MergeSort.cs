@@ -5,7 +5,17 @@ using System.Text;
 namespace ConsoleApp1
 {
     public class MergeSort
+    
     {
 
+
+
+        public static void getFirstNode()
+        {
+
+        }
     }
+
+
+    
 }
