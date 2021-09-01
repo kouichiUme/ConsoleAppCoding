@@ -1,15 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using log4net;
 
 namespace ConsoleApp1
 {
     public class ApproximationAlgorithms
     {
 
+        private static readonly ILog log = LogManager.GetLogger(typeof(ApproximationAlgorithms).Name);
+     
 
-        public static void approxVertexCover()
+        public void approxVertexCover()
         {
+
+            log.Debug("errorr");
+
+
 
         }
 
