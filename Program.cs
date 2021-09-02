@@ -14,8 +14,15 @@ namespace ConsoleApp1
             BasicConfigurator.Configure();
 
 
+            XmlConfigurator.Configure(new System.IO.FileInfo(args[0]));
+
             log.Info("Entering application.");
+            
             Console.WriteLine("Hello World!");
+
+
+            log.Info("End application.");
+
         }
     }
 }
