@@ -9,6 +9,8 @@ namespace ConsoleApp1
         private static readonly ILog log = LogManager.GetLogger(typeof(Program));
         // build
         // msbuild /t:Metrics
+        [assembly: log4net.Config.XmlConfigurator(Watch = false)]
+
         static void Main(string[] args)
         {
             BasicConfigurator.Configure();
