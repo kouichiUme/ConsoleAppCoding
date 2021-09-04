@@ -4,9 +4,16 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class GraphAlgorithm
+    public class GraphAlgorithm
     {
 
+        // operator overload
+        public static GraphAlgorithm operator +(GraphAlgorithm  g, GraphAlgorithm g2)
+        {
+            GraphAlgorithm gResult = new GraphAlgorithm();
+
+            return gResult;
+        }
 
         public void adjacentListRepresentation()
         {
