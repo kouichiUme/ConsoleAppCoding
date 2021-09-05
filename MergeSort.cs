@@ -4,8 +4,10 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    public class MergeSort
-    
+    public class MergeSort<T,V> 
+        where T :  class,new()
+        where V : struct
+  
     {
 
 
