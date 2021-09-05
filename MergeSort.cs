@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -44,6 +45,7 @@ namespace ConsoleApp1
             messageBusBrokerEvent = delegate(string a,string b)
             {
                 return "event ";
+
             };
 
             string a="a", b="b";
@@ -56,8 +58,19 @@ namespace ConsoleApp1
         public void templateGenerics<W>(W w) where W : struct
         {
 
+            int[] a = new int[100];
+
+            // linq
+
+            var tmpList = from e in a
+                          where e > a.Average()
+                          select e;
+
             return;
         }
+
+
+
 
     }
 
