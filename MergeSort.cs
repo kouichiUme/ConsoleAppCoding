@@ -53,7 +53,11 @@ namespace ConsoleApp1
         }
 
 
+        public void templateGenerics<W>(W w) where W : struct
+        {
 
+            return;
+        }
 
     }
 
