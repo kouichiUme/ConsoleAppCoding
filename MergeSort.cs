@@ -70,6 +70,18 @@ namespace ConsoleApp1
         }
 
 
+        public unsafe void templatePointer()
+        {
+            double* dp;
+
+            double v = 1.0;
+
+            dp = &v;
+
+
+
+        }
+
 
 
     }
