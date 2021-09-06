@@ -75,13 +75,24 @@ namespace ConsoleApp1
             double* dp;
 
             double v = 1.0;
-
+            double? v2 = 1.0;
             dp = &v;
 
+
+            double? dp2;
+            double?* dp3;
+
+            dp3 = &v2;
 
 
         }
 
+        public void templateDynamic(dynamic aDo)
+        {
+
+
+        }
+        
 
 
     }
