@@ -19,7 +19,7 @@ namespace ConsoleApp1
 
             }
 
-            dynamic resultObject = new Object();
+            dynamic resultObject = new System.Dynamic.ExpandoObject();
             resultObject["result"] = l;
 
 
