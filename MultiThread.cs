@@ -6,8 +6,25 @@ namespace ConsoleApp1
 {
     class MultiThread
     {
-        public void transPose()
+        public dynamic transPose()
         {
+            decimal l= 0M;
+            dynamic lockObject = new Object();
+
+            lock(lockObject)
+            {
+
+                l = 1.0M;
+
+
+            }
+
+            dynamic resultObject = new Object();
+            resultObject["result"] = l;
+
+
+            return resultObject;
+
 
         }
     }

@@ -90,16 +90,20 @@ namespace ConsoleApp1
         public void templateDynamic(dynamic aDo)
         {
             
+
+
             lock (aDo)
             {
+                
+                
+
 
             }
+
+
+
+
         }
-
-
-         
-        
-
 
     }
 
