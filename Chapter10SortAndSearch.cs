@@ -60,12 +60,10 @@ namespace ConsoleApp1
                             a[k] = a[k-1];
                         }
 
-                        a[aReplaceIndex] = b[bIndex];
-                        // 一つ進める
-                        bIndex++;
-                        aReplaceIndex++;
 
 
+                    }
+                }
 
                     }
                 }
@@ -85,9 +83,6 @@ namespace ConsoleApp1
 
         public void mergeInvertArray(T[] a, T[] b)
         {
-            
-
-
 
         }
 
