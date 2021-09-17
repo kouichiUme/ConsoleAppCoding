@@ -4,13 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1.csproj", "{C37BDE91-04AD-4A2F-9E62-3C493AA6E7D2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F421509F-377D-4A60-B752-E0F5E9F0228C} = {F421509F-377D-4A60-B752-E0F5E9F0228C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "..\TestProject1\TestProject1.csproj", "{E301E881-AD56-4C9B-B396-9C42E8B0D164}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C37BDE91-04AD-4A2F-9E62-3C493AA6E7D2} = {C37BDE91-04AD-4A2F-9E62-3C493AA6E7D2}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F421509F-377D-4A60-B752-E0F5E9F0228C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{F421509F-377D-4A60-B752-E0F5E9F0228C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
