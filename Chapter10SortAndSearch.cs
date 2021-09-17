@@ -22,7 +22,7 @@ namespace ConsoleApp1
             for (int i = 0; aReplaceIndex < a.Length;)
             {
 
-                if(a[aReplaceIndex] == null)
+                if (a[aReplaceIndex] == null)
                 {
                     a[aReplaceIndex] = b[bIndex];
                     bIndex++;
@@ -55,31 +55,21 @@ namespace ConsoleApp1
                     {
 
                         // ひとつづつ右にずらす
-                        for (int k = a.Length -1; k > aReplaceIndex; k--)
+                        for (int k = a.Length - 1; k > aReplaceIndex; k--)
                         {
-                            a[k] = a[k-1];
+                            a[k] = a[k - 1];
                         }
 
 
 
                     }
                 }
-
-                    }
-                }
-
-                else
-                {
-                    //終わり
-                    break;
-                }
-
-
-
             }
-
-
         }
+
+
+
+
 
         public void mergeInvertArray(T[] a, T[] b)
         {
