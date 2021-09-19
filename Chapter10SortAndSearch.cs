@@ -15,11 +15,9 @@ namespace ConsoleApp1
 
 
             // a
-
             // b
-
             // 
-            for (int i = 0; aReplaceIndex < a.Length;)
+            for (int i = 0; GetAReplaceIndex(aReplaceIndex) < a.Length;)
             {
 
                 if (a[aReplaceIndex] == null)
@@ -30,7 +28,6 @@ namespace ConsoleApp1
                 else if (bIndex < b.Length - 1)
                 {
 
-                    // aのほうがちいさい
                     if (a[aReplaceIndex].CompareTo(b[bIndex]) > 0)
                     {
                         a[aReplaceIndex] = a[aReplaceIndex];
@@ -51,6 +48,7 @@ namespace ConsoleApp1
                         // 
 
                     }
+                    // aのほうがちいさい
                     else if ((a[aReplaceIndex].CompareTo(b[bIndex]) < 0))
                     {
 
@@ -67,6 +65,10 @@ namespace ConsoleApp1
             }
         }
 
+        private static int GetAReplaceIndex(int aReplaceIndex)
+        {
+            return aReplaceIndex;
+        }
 
 
 
