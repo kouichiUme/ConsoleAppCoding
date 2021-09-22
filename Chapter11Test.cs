@@ -11,8 +11,24 @@ namespace ConsoleApp1
         {
 
             int i = 0;
-
+            uint ui = 0;
             System.Console.WriteLine("{0}", i);
+            System.Console.WriteLine("{0}", ui);
         }
+
+
+
+        public static void randomCrash()
+        {
+            
+            for(int i = 0; i< 10; i++)
+            {
+                System.Console.WriteLine("{10}", i);
+            }
+
+
+        }
+
+
     }
 }
