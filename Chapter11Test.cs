@@ -29,6 +29,24 @@ namespace ConsoleApp1
 
         }
 
+        /// <summary>
+        /// x、yに移動できるかどうかを返す
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        public static bool canMoveTo(int x , int y)
+        {
+
+
+
+            return false;
+        }
+        
+
+
+
+
+
 
     }
 }
