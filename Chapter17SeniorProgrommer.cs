@@ -4,7 +4,12 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Chapter17SeniorProgrommer
+    public class Chapter17SeniorProgrommer
     {
+
+        public void coarseResembling()
+        {
+
+        }
     }
 }
