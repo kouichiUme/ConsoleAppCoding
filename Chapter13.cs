@@ -6,5 +6,13 @@ namespace ConsoleApp1
 {
     class Chapter13
     {
+
+        try{
+            return ;
+        }catch{
+        }finally{
+            
+        }
+
     }
 }
