@@ -7,11 +7,20 @@ namespace ConsoleApp1
     class Chapter13
     {
 
-        try{
-            return ;
-        }catch{
-        }finally{
-            
+        public static void checkReturn()
+        {
+            try
+            {
+                return;
+            }
+            catch
+            {
+            }
+            finally
+            {
+
+            }
+
         }
 
     }
