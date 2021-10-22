@@ -12,9 +12,18 @@ namespace ConsoleApp1
         {
 
 
-
+            // linq
+            // from
+            // 
 
 
         }
+
+
+        public static void whereInLinq()
+        {
+
+        }
+
     }
 }
