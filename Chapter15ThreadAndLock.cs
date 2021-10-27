@@ -11,6 +11,8 @@ namespace ConsoleApp1
         public static void sread()
         {
 
+            Console.WriteLine("");
+
         }
 
         public static void sreadCaller()
