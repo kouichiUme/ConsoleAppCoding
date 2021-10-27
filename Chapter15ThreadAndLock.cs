@@ -20,7 +20,7 @@ namespace ConsoleApp1
 
             Thread t = new Thread(new ThreadStart(sread));
 
-
+            t.Start();
 
         }
 
