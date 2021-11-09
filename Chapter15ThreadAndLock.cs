@@ -22,6 +22,10 @@ namespace ConsoleApp1
 
             t.Start();
 
+            t.Suspend();
+
+
+
         }
 
     }
