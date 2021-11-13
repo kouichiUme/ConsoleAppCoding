@@ -6,6 +6,7 @@ namespace ConsoleApp1
 {
     public class Chapter14Sql
     {
+        private ILogger _logger;
 
 
         public static void p1()
