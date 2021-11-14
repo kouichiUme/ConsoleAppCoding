@@ -13,16 +13,24 @@ namespace ConsoleApp1
 
             Console.WriteLine("");
 
+            return;
         }
 
         public static void sreadCaller()
         {
 
+            DateTime beforeStart = DateTime.Now;
+            
+            
+            Console.WriteLine("");
+
             Thread t = new Thread(new ThreadStart(sread));
 
             t.Start();
 
-            t.Suspend();
+            TimeSpan ts  = beforeStart  - DateTime.Now;
+
+            Console.WriteLine(ts);
 
 
 
