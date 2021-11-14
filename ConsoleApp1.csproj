@@ -39,6 +39,7 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <StartupObject>ConsoleApp1.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
