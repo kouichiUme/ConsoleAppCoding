@@ -5,6 +5,40 @@ using System.Threading;
 
 namespace ConsoleApp1
 {
+
+    class ChopStick
+    {
+        private ReaderWriterLock _lock;
+        private ChopStick pair;
+
+        public ChopStick()
+        {
+            _lock = new ReaderWriterLock();
+
+        }
+
+        public bool pickUp()
+        {
+            // AquireReadLock needs timeout
+            _lock.AcquireReaderLock(1000);
+            if (!pair.pickUp()) {
+                _lock.ReleaseReaderLock();
+                return false;
+            }
+
+            return true;
+
+        }
+
+        public void putDown()
+        {
+            _lock.ReleaseReaderLock();
+
+        }
+
+    }
+
+
     public class Chapter15ThreadAndLock 
     {
 
@@ -20,8 +54,9 @@ namespace ConsoleApp1
         {
 
             DateTime beforeStart = DateTime.Now;
-            
-            
+
+
+            ChopStick chopStick = new ChopStick();
             Console.WriteLine("");
 
             Thread t = new Thread(new ThreadStart(sread));
@@ -32,7 +67,11 @@ namespace ConsoleApp1
 
             Console.WriteLine(ts);
 
+            lock (chopStick)
+            {
+                
 
+            }
 
         }
 

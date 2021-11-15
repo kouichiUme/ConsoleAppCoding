@@ -4,7 +4,16 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Chapter16Intermediate
+    public class Chapter16Intermediate
     {
+
+        
+
+        // 中級問題
+        public Chapter16Intermediate(){
+
+
+            // 
+        }
     }
 }
