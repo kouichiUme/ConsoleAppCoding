@@ -19,8 +19,25 @@ namespace ConsoleApp1
 
 
         // 
-        public void swapWithoutVariables()
+        public static int[] swapWithoutVariables(int a ,int b)
         {
+            // a=b,b=a;
+            a = a - b;
+            b = a + b;
+            a = b - a;
+
+
+            a = a ^ b;
+            b = a ^ b;
+            a = a ^ b;
+            
+            // python の場合はお互いの入れ替え代入ができる
+　　　　　　// [a,b] = [b,a]
+
+            int[] res = new int[2];
+            res[0] = a;
+            res[1] = b;
+            return res;
 
         }
 
