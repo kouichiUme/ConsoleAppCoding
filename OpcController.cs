@@ -5,7 +5,6 @@ using System.Text;
 namespace ConsoleApp1
 {
 
-    [http]
     public class OpcController
     {
 
