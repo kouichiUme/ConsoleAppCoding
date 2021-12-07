@@ -13,6 +13,12 @@ namespace ConsoleApp1
 
 
         // PriorityQueue<Int32,string> squeue = new PriorityQueue<int, string>();
+        Queue<String> queue = new Queue<String>();
+
+        Stack<String> stack = new Stack<string>();
+
+        LinkedList<String> link = new LinkedList<string>();
+
 
         SortedDictionary<Int32, string> sDictionary = new SortedDictionary<int, string>();
 

@@ -44,15 +44,15 @@ namespace ConsoleApp1
         public int[] OneBitFullAdder(int a,int b,int c)
         {
 
-            int advance = 0b0;
+            int carry = 0b0;
 
             int reside = (a ^ b);
 
-            advance = a & b | reside & c;
+            carry = a & b | reside & c;
             reside = reside ^ c;
 
 
-            return new int[]{ reside,advance};
+            return new int[]{ reside,carry};
 
         }
 
@@ -66,6 +66,7 @@ namespace ConsoleApp1
             int result = 0;
             for(int i = 0;i < intlength; i++)
             {
+
                 ra = OneBitFullAdder(a, b, ra[1]);
 
                 result |= (ra[0] << i);
@@ -134,8 +135,12 @@ namespace ConsoleApp1
 
 
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void coarseResembling()
         {
+
 
         
         }
