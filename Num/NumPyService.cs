@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using NumSharp;
 
+
+
 namespace ConsoleApp1.Num
 {
     public class NumPyService
